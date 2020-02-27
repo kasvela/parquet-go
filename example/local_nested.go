@@ -5,8 +5,8 @@ import (
 	"log"
 
 	"github.com/xitongsys/parquet-go-source/local"
-	"github.com/xitongsys/parquet-go/reader"
-	"github.com/xitongsys/parquet-go/writer"
+	"github.com/kasvela/parquet-go/reader"
+	"github.com/kasvela/parquet-go/writer"
 )
 
 type Student struct {

@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"fmt"
 
-	"github.com/xitongsys/parquet-go/parquet"
-	"github.com/xitongsys/parquet-go/types"
+	"github.com/kasvela/parquet-go/parquet"
+	"github.com/kasvela/parquet-go/types"
 )
 
 
