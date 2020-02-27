@@ -2,6 +2,7 @@ package marshal
 
 import (
 	"errors"
+	"fmt"
 	"reflect"
 	"strings"
 
@@ -225,6 +226,8 @@ func Marshal(srcInterface []interface{}, bgn int, end int, schemaHandler *schema
 			res[pathStr].RepetitionType = schema.GetRepetitionType()
 			res[pathStr].Type = schemaHandler.SchemaElements[schemaHandler.MapIndex[pathStr]].GetType()
 			res[pathStr].Info = schemaHandler.Infos[i]
+		} else {
+			fmt.Printf("Not a leaf. Not creating internal representation")
 		}
 	}
 
